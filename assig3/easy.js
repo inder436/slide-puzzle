@@ -49,11 +49,6 @@ const puzzle = {
     puzzle.secondPiece = puzzle.pieces[e.target.dataset.idx - 1];
     puzzle.thirdPiece = puzzle.pieces[e.target.dataset.idx - 2];
     directionToMove = puzzle.isMoveable();
-  //  TweenMax.to(puzzle.currentPiece, 0.17, {
-  //    x: puzzle.pieces[this.currentPiece.dataset.idx].x,
-  //    y: puzzle.pieces[this.currentPiece.dataset.idx].y,
-  //    ease: Power0.easeNone
-  //  });
 
     if((directionToMove=="up-down")||(directionToMove=="left-right")){
        TweenMax.to(this, 0.50, {
